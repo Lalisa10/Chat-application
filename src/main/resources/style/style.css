@@ -1,0 +1,75 @@
+.message-field {
+    -fx-background-color: #E2DFDF
+}
+
+.avatar-image {
+    -fx-background-radius: 100%
+}
+
+.call-button {
+    -fx-pref-width: 30;
+    -fx-pref-height: 30;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.call-button:hover {
+    -fx-background-color: LightGray;
+    -fx-background-radius:100%;
+}
+
+.message-button {
+    -fx-pref-width: 30;
+    -fx-pref-height: 30;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.message-button:hover {
+    -fx-background-color: LightGray;
+    -fx-background-radius:100%;
+}
+
+.message-content {
+    /*-fx-min-height: 35;*/
+    -fx-max-width: 205;
+    -fx-wrap-text: true;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+.user-message-content {
+    -fx-background-color: BLUE;
+}
+
+.other-s-message-content {
+    -fx-background-color: #F50D68;
+}
+
+.message-cell {
+    /*-fx-pref-height: 35;*/
+    -fx-pref-width: 405;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+}
+
+.circle {
+    -fx-stroke: transparent;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-padding: 0;
+}
+
+.upper-pane {
+    -fx-background-color: #eeecec;
+}

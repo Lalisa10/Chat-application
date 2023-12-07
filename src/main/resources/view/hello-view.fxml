@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="471.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.hellocontroller.MessengerController">
+   <children>
+      <Pane layoutX="1.0" layoutY="472.0" prefHeight="55.0" prefWidth="471.0" stylesheets="@../style/style.css">
+         <children>
+            <Button layoutX="23.0" layoutY="15.0" mnemonicParsing="false" styleClass="message-button" stylesheets="@../style/style.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/camera.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="110.0" layoutY="15.0" mnemonicParsing="false" styleClass="message-button" stylesheets="@../style/style.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/micro.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="messageField" layoutX="157.0" layoutY="11.0" prefHeight="33.0" prefWidth="285.0" promptText="Nhắn tin...." styleClass="message-field" />
+            <Button layoutX="65.0" layoutY="14.0" mnemonicParsing="false" styleClass="message-button" stylesheets="@../style/style.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/image.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="sendButton" layoutX="405.0" layoutY="15.0" mnemonicParsing="false" styleClass="message-button" stylesheets="@../style/style.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/send.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Line endX="471.0" endY="55.0" startY="55.0" stroke="#b2acac">
+         <effect>
+            <Blend />
+         </effect>
+      </Line>
+      <Pane prefHeight="55.0" prefWidth="471.0" styleClass="upper-pane" stylesheets="@../style/style.css">
+         <children>
+            <Button layoutX="403.0" layoutY="17.0" mnemonicParsing="false" styleClass="call-button" stylesheets="@../style/style.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/video-call.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="65.0" layoutY="7.0" prefHeight="26.0" prefWidth="43.0" text="LISA">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="32.0" text="  Đang hoạt động" textFill="#b5a7a7">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="347.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" styleClass="call-button" stylesheets="@../style/style.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/normal-call.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Circle fx:id="avatarCircle" fill="WHITE" layoutX="36.0" layoutY="28.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle" />
+            <ImageView fitHeight="17.0" fitWidth="10.0" layoutX="58.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/green-dot.png" />
+               </image></ImageView>
+            <ImageView fitHeight="15.0" fitWidth="16.0" layoutX="109.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/blue-tick.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Line endX="471.0" stroke="#eeecec" />
+      <ListView fx:id="messageList" layoutX="11.0" layoutY="76.0" prefHeight="396.0" prefWidth="449.0" />
+      <Pane fx:id="introductionPane" layoutX="34.0" layoutY="76.0" prefHeight="224.0" prefWidth="405.0" stylesheets="@../style/style.css">
+         <children>
+            <Circle fx:id="introductionAvatarCircle" fill="DODGERBLUE" layoutX="203.0" layoutY="86.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle" />
+            <Label layoutX="178.0" layoutY="148.0" textFill="#b5a7a7">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="181.0" layoutY="150.0" prefHeight="26.0" prefWidth="43.0" text="LISA">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="15.0" fitWidth="16.0" layoutX="224.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/blue-tick.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="142.0" layoutY="176.0" text="Người của công chúng" textFill="#b5a7a7">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="155.0" layoutY="193.0" text="YG Entertainment" textFill="#b5a7a7">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
