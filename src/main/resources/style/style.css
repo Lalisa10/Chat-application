@@ -43,10 +43,12 @@
 
 .user-message-content {
     -fx-background-color: BLUE;
+    -fx-background-radius: 5 5 0 5;
 }
 
 .other-s-message-content {
     -fx-background-color: #F50D68;
+    -fx-background-radius: 5 5 5 0;
 }
 
 .message-cell {
@@ -56,6 +58,7 @@
 
 .list-view {
     -fx-background-color: transparent;
+    -fx-arrow-color:white;
 }
 
 .list-cell {
@@ -68,6 +71,25 @@
 
 .list-view .scroll-bar:vertical {
     -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-pref-width: 8;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-padding: 0;
+    -fx-background-color: LightGray;
+    -fx-pref-width: 8;
+}
+
+.list-view .scroll-bar:vertical .increment-arrow,
+.list-view .scroll-bar:vertical .decrement-arrow,
+.list-view .scroll-bar:vertical .increment-button,
+.list-view .scroll-bar:vertical .decrement-button {
+  -fx-padding: 0px;
+}
+
+.list-view .scroll-bar:vertical {
+  -fx-padding: 0px;
 }
 
 .upper-pane {

@@ -34,7 +34,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <TextField fx:id="messageField" layoutX="157.0" layoutY="11.0" prefHeight="33.0" prefWidth="285.0" promptText="Nhắn tin...." styleClass="message-field" />
+            <TextField fx:id="messageField" layoutX="157.0" layoutY="11.0" maxWidth="264.0" prefHeight="33.0" prefWidth="257.0" promptText="Nhắn tin...." styleClass="message-field" />
             <Button layoutX="65.0" layoutY="14.0" mnemonicParsing="false" styleClass="message-button" stylesheets="@../style/style.css">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
@@ -43,7 +43,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="sendButton" layoutX="405.0" layoutY="15.0" mnemonicParsing="false" styleClass="message-button" stylesheets="@../style/style.css">
+            <Button fx:id="sendButton" layoutX="427.0" layoutY="11.0" mnemonicParsing="false" styleClass="message-button" stylesheets="@../style/style.css">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -100,8 +100,8 @@
          </children>
       </Pane>
       <Line endX="471.0" stroke="#eeecec" />
-      <ListView fx:id="messageList" layoutX="11.0" layoutY="76.0" prefHeight="396.0" prefWidth="449.0" />
-      <Pane fx:id="introductionPane" layoutX="34.0" layoutY="76.0" prefHeight="224.0" prefWidth="405.0" stylesheets="@../style/style.css">
+      <ListView fx:id="messageList" layoutX="11.0" layoutY="56.0" prefHeight="416.0" prefWidth="449.0" />
+      <Pane fx:id="introductionPane" layoutX="34.0" layoutY="56.0" prefHeight="244.0" prefWidth="405.0" stylesheets="@../style/style.css">
          <children>
             <Circle fx:id="introductionAvatarCircle" fill="DODGERBLUE" layoutX="203.0" layoutY="86.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle" />
             <Label layoutX="178.0" layoutY="148.0" textFill="#b5a7a7">
